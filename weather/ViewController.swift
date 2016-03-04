@@ -9,16 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var weatherIcon: UIImageView!
+    @IBOutlet weak var weatherDesc: UILabel!
+    @IBOutlet weak var currentTemp: UILabel!
+    @IBOutlet weak var percentHumid: UILabel!
+    @IBOutlet weak var windMph: UIStackView!
+    
+    var currentWeather: CurrentWeather!
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        currentWeather = CurrentWeather(city: "4317656")
+        
+        currentWeather.downloadWeather { () -> () in
+
+        }
+     
+        
+        
+        
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
+    
 
 
 }

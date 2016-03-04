@@ -14,6 +14,7 @@
 		DA8592A71C862A9F00DE54A2 /* weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA8592A51C862A9F00DE54A2 /* weather.xcdatamodeld */; };
 		DA8592A91C862A9F00DE54A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8592A81C862A9F00DE54A2 /* Assets.xcassets */; };
 		DA8592AC1C862A9F00DE54A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8592AA1C862A9F00DE54A2 /* LaunchScreen.storyboard */; };
+		DAAC20061C8642D4002764F7 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC20051C8642D4002764F7 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DA8592A81C862A9F00DE54A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8592AB1C862A9F00DE54A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8592AD1C862A9F00DE54A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAAC20051C8642D4002764F7 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		EDC82FB1406F56B67C8E3F1A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 		DA4D54DD1C862E6B0081DEA4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DAAC20051C8642D4002764F7 /* CurrentWeather.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				DA8592A71C862A9F00DE54A2 /* weather.xcdatamodeld in Sources */,
 				DA8592A11C862A9F00DE54A2 /* ViewController.swift in Sources */,
+				DAAC20061C8642D4002764F7 /* CurrentWeather.swift in Sources */,
 				DA85929F1C862A9F00DE54A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
