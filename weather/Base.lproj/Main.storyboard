@@ -116,7 +116,7 @@
                         <outlet property="percentHumid" destination="KNh-Zv-ybQ" id="X4T-6N-jab"/>
                         <outlet property="weatherDesc" destination="G8X-WP-tOS" id="KKV-0m-5GP"/>
                         <outlet property="weatherIcon" destination="FjT-9y-uAK" id="eN9-T2-Tn6"/>
-                        <outlet property="windMph" destination="p7i-gm-i1f" id="AXv-sc-Aw5"/>
+                        <outlet property="windMph" destination="GDF-pb-kUa" id="1P0-Ot-WMH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

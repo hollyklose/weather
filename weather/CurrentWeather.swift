@@ -115,18 +115,48 @@ class CurrentWeather {
                     }
                     
                     //grab "main", only the first one for icon
+                    if let icon = weather[0]["main"] as? String {
+                        self._weatherIcon = icon.capitalizedString
+                        print(self._weatherIcon)
+                        
+                        if self._weatherIcon == "Clouds" || self._weatherIcon == "Mist" {
+                            self._weatherIcon = "cloudy.png"
+                        }
+                        
+                        if self._weatherIcon == "Atmosphere" || self._weatherIcon == "Additional" {
+                            self._weatherIcon = "partly-cloudy.png"
+                        }
+                        
+                        if self._weatherIcon == "Rain" || self._weatherIcon == "Drizzle" {
+                            self._weatherIcon = "rainy.png"
+                        }
+                        
+                        if self._weatherIcon == "Snow" {
+                            self._weatherIcon = "snowing.png"
+                        }
+                        
+                        if self._weatherIcon == "Thunderstorm" || self._weatherIcon == "Extreme" {
+                            self._weatherIcon = "storm.png"
+                        }
+                        
+                        if self._weatherIcon == "Clear" {
+                            self._weatherIcon = "sunny.png"
+                        }
+                        
+                    }
                     
                     
                 } else {
-                    self._weatherDesc = ""
+                    self._weatherIcon = ""
                 }
                 
                 
             
             }
 
-            
+            completed()
         }
+        
     }
     
     
